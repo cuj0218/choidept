@@ -86,9 +86,16 @@ test('keeps the short desktop hero and mobile headline inside the viewport', () 
   assert.match(css, /height:\s*min\(44svh,\s*430px\)/);
   assert.match(css, /@media \(max-width: 1199px\)[\s\S]*grid-template-columns:\s*minmax\(0,\s*1\.05fr\) minmax\(300px,\s*\.95fr\)/);
   assert.doesNotMatch(css, /@media \(max-width: 900px\)\s*\{\s*\.hero\s*\{\s*grid-template-columns:\s*1fr/);
-  assert.match(css, /@media \(max-width: 768px\)[\s\S]*\.hero\s*\{\s*grid-template-columns:\s*1fr/);
+  assert.match(css, /@media \(max-width: 960px\)[\s\S]*\.hero\s*\{\s*grid-template-columns:\s*1fr/);
   assert.match(css, /\.hero__mobile-break\s*\{\s*display:\s*none/);
   assert.match(css, /@media \(max-width: 768px\)[\s\S]*\.hero__mobile-break\s*\{\s*display:\s*block/);
+});
+
+test('keeps the brand mark compact and the layout viewport-safe', () => {
+  assert.match(css, /\.wordmark\s*\{[^}]*width:\s*96px[^}]*height:\s*18px/);
+  assert.match(css, /--page:\s*min\(1440px,\s*calc\(100vw\s*-\s*\(var\(--page-gutter\)\s*\*\s*2\)\)\)/);
+  assert.match(css, /\.hero__metrics\s*,\s*\.hero__metrics div\s*\{[^}]*min-width:\s*0/);
+  assert.match(css, /@media \(max-width: 960px\)[\s\S]*\.hero\s*\{[^}]*grid-template-columns:\s*1fr/);
 });
 
 test('ships the editable type system and bilingual header control', () => {

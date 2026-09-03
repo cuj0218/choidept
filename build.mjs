@@ -5,6 +5,8 @@ await mkdir('dist', { recursive: true });
 await cp('index.html', 'dist/index.html');
 await cp('styles.css', 'dist/styles.css');
 await cp('script.js', 'dist/script.js');
+await cp('portfolio-data.js', 'dist/portfolio-data.js');
+await cp('ui-state.js', 'dist/ui-state.js');
 await cp('assets', 'dist/assets', { recursive: true });
 await cp('public', 'dist/public', { recursive: true });
 await cp('robots.txt', 'dist/robots.txt');

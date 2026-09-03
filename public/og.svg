@@ -1,15 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#f5f2ea"/>
-  <path d="M0 0h1200v630H0z" fill="url(#grid)" opacity=".38"/>
-  <rect x="72" y="72" width="1056" height="486" fill="none" stroke="#d9d5ca"/>
-  <circle cx="965" cy="220" r="144" fill="#3157ff" opacity=".1"/>
-  <circle cx="965" cy="220" r="104" fill="none" stroke="#3157ff" stroke-width="2" opacity=".35"/>
-  <text x="110" y="135" fill="#3157ff" font-family="monospace" font-size="21" letter-spacing="3">CHOI_DEPT / 2026</text>
-  <text x="110" y="295" fill="#171717" font-family="Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-5">AI Creative &amp;</text>
-  <text x="110" y="375" fill="#3157ff" font-family="Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-5">Research Operations</text>
-  <text x="110" y="465" fill="#6e6c68" font-family="Arial, sans-serif" font-size="25">기업의 AI 실험을 콘텐츠와 운영 가능한 워크플로우로.</text>
-  <text x="1010" y="211" text-anchor="middle" fill="#171717" font-family="monospace" font-size="17">OPEN</text>
-  <text x="1010" y="235" text-anchor="middle" fill="#171717" font-family="monospace" font-size="17">FOR</text>
-  <text x="1010" y="259" text-anchor="middle" fill="#3157ff" font-family="monospace" font-size="17">B2B</text>
-  <defs><pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#d9d5ca" stroke-width="1"/></pattern></defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">CHOI DEPT — 모두가 AI를 쉽게, 최피티</title>
+  <desc id="desc">아이보리 배경 위 코발트 포인트와 최피티 캐릭터가 있는 공유 이미지</desc>
+  <rect width="1200" height="630" fill="#F7F4EC"/>
+  <circle cx="970" cy="160" r="270" fill="#3157FF" opacity=".16"/>
+  <rect x="54" y="48" width="1092" height="534" rx="34" fill="none" stroke="#111111" stroke-opacity=".18"/>
+  <image href="../assets/characters/dark.webp" x="760" y="95" width="380" height="480" preserveAspectRatio="xMidYMid meet"/>
+  <text x="90" y="118" fill="#111111" font-family="Arial, sans-serif" font-size="25" font-weight="700">CHOI DEPT.</text>
+  <text x="90" y="288" fill="#111111" font-family="Arial, sans-serif" font-size="78" font-weight="800">모두가 AI를 쉽게,</text>
+  <text x="90" y="386" fill="#3157FF" font-family="Arial, sans-serif" font-size="102" font-weight="900">최피티.</text>
+  <text x="94" y="476" fill="#111111" fill-opacity=".62" font-family="Arial, sans-serif" font-size="24">AI CONTENT · GROWTH · CREATOR PARTNERSHIPS</text>
+  <text x="94" y="530" fill="#111111" font-family="monospace" font-size="18">CHOIDEPT.COM</text>
 </svg>

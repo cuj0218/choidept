@@ -24,31 +24,32 @@
       <header class="site-header" aria-label="주요 메뉴">
         <a class="wordmark" href="#top" aria-label="CHOI DEPT 홈">CHOI DEPT.</a>
         <nav class="desktop-nav" aria-label="데스크톱 메뉴">
-          <a href="#proof-ledger">PROOF</a>
-          <a href="#selected-work">WORK</a>
-          <a href="#experience">EXPERIENCE</a>
-          <a class="nav-cta" href="mailto:hello@choidept.com">WORK WITH ME ↗</a>
+          <a data-copy="nav.proof" href="#proof-ledger">PROOF</a>
+          <a data-copy="nav.work" href="#selected-work">WORK</a>
+          <a data-copy="nav.experience" href="#experience">EXPERIENCE</a>
+          <a class="nav-cta" data-copy="nav.cta" href="mailto:hello@choidept.com">WORK WITH ME ↗</a>
         </nav>
+        <button id="language-toggle" class="language-toggle" type="button" aria-pressed="false" aria-label="Switch language">EN</button>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">MENU</button>
         <nav id="mobile-nav" class="mobile-nav" aria-label="모바일 메뉴">
-          <a href="#proof-ledger">PROOF</a>
-          <a href="#selected-work">WORK</a>
-          <a href="#experience">EXPERIENCE</a>
-          <a href="mailto:hello@choidept.com">WORK WITH ME ↗</a>
+          <a data-copy="nav.proof" href="#proof-ledger">PROOF</a>
+          <a data-copy="nav.work" href="#selected-work">WORK</a>
+          <a data-copy="nav.experience" href="#experience">EXPERIENCE</a>
+          <a class="nav-cta" data-copy="nav.cta" href="mailto:hello@choidept.com">WORK WITH ME ↗</a>
         </nav>
       </header>
 
       <main id="top">
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero__copy">
-            <p class="pixel-label">[ HELLO, I'M WOOJIN ]</p>
+            <p class="pixel-label" data-copy="hero.eyebrow">[ HELLO, I'M WOOJIN ]</p>
             <h1 id="hero-title">모두가 AI를<span class="hero__desktop-space"> </span><br class="hero__mobile-break">쉽게,<br><em>최피티.</em></h1>
-            <p class="hero__lede">새로운 AI 제품을 사람들이 이해하고, 직접 써보고, 결과를 만들게 합니다.</p>
+            <p class="hero__lede" data-copy="hero.lede">새로운 AI 제품을 사람들이 이해하고, 직접 써보고, 결과를 만들게 합니다.</p>
             <div class="hero__actions">
-              <a class="button button--primary" href="#selected-work">SELECTED WORK</a>
-              <a class="button button--glass" href="mailto:hello@choidept.com">B2B INQUIRY ↗</a>
+              <a class="button button--primary" data-copy="hero.primary" href="#selected-work">SELECTED WORK</a>
+              <a class="button button--glass" data-copy="hero.secondary" href="mailto:hello@choidept.com">B2B INQUIRY ↗</a>
             </div>
-            <dl class="hero__metrics" aria-label="주요 성과">
+            <dl class="hero__metrics" data-copy-aria="hero.metricsLabel" aria-label="주요 성과">
               <div><dt>28K+</dt><dd>FOLLOWERS</dd></div>
               <div><dt>15M+</dt><dd>ORGANIC VIEWS</dd></div>
               <div><dt>32</dt><dd>BRAND COLLABORATIONS</dd></div>
@@ -75,20 +76,20 @@
         </section>
 
         <section id="proof-ledger" class="proof-ledger" aria-labelledby="proof-title">
-          <p class="section-index">01 / PROOF LEDGER</p>
-          <h2 id="proof-title">숫자는 맥락과 함께<br>보여줍니다.</h2>
+          <p class="section-index" data-copy="proof.index">01 / PROOF LEDGER</p>
+          <h2 id="proof-title" data-copy-lines="proof.title">숫자는 맥락과 함께<br>보여줍니다.</h2>
           <div id="proof-list" class="proof-list"></div>
         </section>
 
         <section id="selected-work" class="selected-work" aria-labelledby="work-title">
-          <p class="section-index">02 / SELECTED WORK</p>
-          <h2 id="work-title">새로운 기술을<br>사람이 쓰는 결과로.</h2>
+          <p class="section-index" data-copy="work.index">02 / SELECTED WORK</p>
+          <h2 id="work-title" data-copy-lines="work.title">새로운 기술을<br>사람이 쓰는 결과로.</h2>
           <div id="case-list" class="case-list"></div>
         </section>
 
         <section id="experience" class="experience" aria-labelledby="experience-title">
-          <p class="section-index">03 / EXPERIENCE</p>
-          <h2 id="experience-title">콘텐츠, 성장, 운영,<br>그리고 연구.</h2>
+          <p class="section-index" data-copy="experience.index">03 / EXPERIENCE</p>
+          <h2 id="experience-title" data-copy-lines="experience.title">콘텐츠, 성장, 운영,<br>그리고 연구.</h2>
           <ol id="experience-list" class="experience-list"></ol>
         </section>
 
@@ -100,26 +101,26 @@
             <img src="/assets/characters/neutral.webp" alt="" width="900" height="900">
           </div>
           <div class="profile-copy">
-            <p class="section-index">04 / PROFILE</p>
-            <h2 id="profile-title">안녕하세요,<br>최우진입니다.</h2>
-            <p>저는 새로운 AI를 어렵게 설명하기보다, 사람들이 직접 써보고 결과를 만들 수 있게 바꿉니다.</p>
-            <p>Choi.GPT에서는 복잡한 기능을 짧고 실용적인 콘텐츠로 풀어내고, 기업에서는 콘텐츠·크리에이터·데이터를 연결해 실제 성장으로 이어지게 합니다.</p>
-            <p>기술을 소개하는 사람보다, 사람들이 기술을 실제로 쓰게 만드는 사람에 가깝습니다.</p>
+            <p class="section-index" data-copy="profile.index">04 / PROFILE</p>
+            <h2 id="profile-title" data-copy-lines="profile.title">안녕하세요,<br>최우진입니다.</h2>
+            <p data-copy="profile.paragraphs.0">저는 새로운 AI를 어렵게 설명하기보다, 사람들이 직접 써보고 결과를 만들 수 있게 바꿉니다.</p>
+            <p data-copy="profile.paragraphs.1">Choi.GPT에서는 복잡한 기능을 짧고 실용적인 콘텐츠로 풀어내고, 기업에서는 콘텐츠·크리에이터·데이터를 연결해 실제 성장으로 이어지게 합니다.</p>
+            <p data-copy="profile.paragraphs.2">기술을 소개하는 사람보다, 사람들이 기술을 실제로 쓰게 만드는 사람에 가깝습니다.</p>
           </div>
         </section>
 
         <section id="contact" class="contact" aria-labelledby="contact-title">
-          <p class="section-index">05 / CONTACT</p>
-          <h2 id="contact-title">새로운 AI를 사람들이<br>실제로 쓰게 만들고 싶다면.</h2>
-          <a class="contact__email" href="mailto:hello@choidept.com">LET'S WORK TOGETHER ↗</a>
+          <p class="section-index" data-copy="contact.index">05 / CONTACT</p>
+          <h2 id="contact-title" data-copy-lines="contact.title">새로운 AI를 사람들이<br>실제로 쓰게 만들고 싶다면.</h2>
+          <a class="contact__email" data-copy="contact.cta" href="mailto:hello@choidept.com">LET'S WORK TOGETHER ↗</a>
           <nav aria-label="외부 프로필"><a href="https://www.linkedin.com/in/woojin-choi-a0989b24a/">LINKEDIN</a><a href="https://www.instagram.com/choi.gpt.ai/">INSTAGRAM</a></nav>
         </section>
       </main>
 
       <footer class="site-footer">
-        <span>© 2026 CHOI DEPT.</span>
-        <span>SEOUL / KOREA</span>
-        <a href="#top">BACK TO TOP ↑</a>
+        <span data-copy="footer.copyright">© 2026 CHOI DEPT.</span>
+        <span data-copy="footer.location">SEOUL / KOREA</span>
+        <a data-copy="footer.top" href="#top">BACK TO TOP ↑</a>
       </footer>
     </div>
     <script type="module" src="/script.js"></script>

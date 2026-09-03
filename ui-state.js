@@ -9,3 +9,14 @@ export function nextPersonaIndex(current, key, length) {
   if (key === 'ArrowLeft' || key === 'ArrowUp') return wrapIndex(current - 1, length);
   return current;
 }
+
+export function languageFromLocation(search, storedLanguage = 'ko') {
+  const queryLanguage = new URLSearchParams(search).get('lang');
+  return ['ko', 'en'].includes(queryLanguage)
+    ? queryLanguage
+    : (['ko', 'en'].includes(storedLanguage) ? storedLanguage : 'ko');
+}
+
+export function nextLanguage(language) {
+  return language === 'en' ? 'ko' : (language === 'ko' ? 'en' : 'ko');
+}

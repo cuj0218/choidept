@@ -1,36 +1,31 @@
+export const pageCopy = {
+  ko: {
+    nav: { proof: 'PROOF', work: 'WORK', experience: 'EXPERIENCE', cta: 'WORK WITH ME ↗', language: 'EN' },
+    hero: { eyebrow: "[ HELLO, I'M WOOJIN ]", title: '모두가 AI를 쉽게, 최피티.', titleLines: ['모두가 AI를 쉽게,', '최피티.'], lede: '새로운 AI 제품을 사람들이 이해하고, 직접 써보고, 결과를 만들게 합니다.', primary: 'SELECTED WORK', secondary: 'B2B INQUIRY ↗', metricsLabel: '주요 성과' },
+    proof: { index: '01 / PROOF LEDGER', title: ['숫자는 맥락과 함께', '보여줍니다.'] },
+    work: { index: '02 / SELECTED WORK', title: ['새로운 기술을', '사람이 쓰는 결과로.'], fields: ['CONTEXT', 'RESPONSIBILITY', 'SYSTEM', 'RESULT'] },
+    experience: { index: '03 / EXPERIENCE', title: ['콘텐츠, 성장, 운영,', '그리고 연구.'] },
+    profile: { index: '04 / PROFILE', title: ['안녕하세요,', '최우진입니다.'], paragraphs: ['저는 새로운 AI를 어렵게 설명하기보다, 사람들이 직접 써보고 결과를 만들 수 있게 바꿉니다.', 'Choi.GPT에서는 복잡한 기능을 짧고 실용적인 콘텐츠로 풀어내고, 기업에서는 콘텐츠·크리에이터·데이터를 연결해 실제 성장으로 이어지게 합니다.', '기술을 소개하는 사람보다, 사람들이 기술을 실제로 쓰게 만드는 사람에 가깝습니다.'] },
+    contact: { index: '05 / CONTACT', title: ['새로운 AI를 사람들이', '실제로 쓰게 만들고 싶다면.'], cta: "LET'S WORK TOGETHER ↗", socials: ['LINKEDIN', 'INSTAGRAM'] },
+    footer: { copyright: '© 2026 CHOI DEPT.', location: 'SEOUL / KOREA', top: 'BACK TO TOP ↑' },
+  },
+  en: {
+    nav: { proof: 'PROOF', work: 'WORK', experience: 'EXPERIENCE', cta: 'WORK WITH ME ↗', language: 'KO' },
+    hero: { eyebrow: "[ HELLO, I'M WOOJIN ]", title: 'Making AI easy for everyone.', titleLines: ['Making AI easy', 'for everyone.'], lede: 'I turn new AI products into clear experiences people can understand, try, and use to make real outcomes.', primary: 'SELECTED WORK', secondary: 'B2B INQUIRY ↗', metricsLabel: 'Selected proof' },
+    proof: { index: '01 / PROOF LEDGER', title: ['Numbers need context.', 'Here is the context.'] },
+    work: { index: '02 / SELECTED WORK', title: ['Turning new technology', 'into something people use.'], fields: ['CONTEXT', 'RESPONSIBILITY', 'SYSTEM', 'RESULT'] },
+    experience: { index: '03 / EXPERIENCE', title: ['Content, growth, operations,', 'and research.'] },
+    profile: { index: '04 / PROFILE', title: ['Hello,', "I'm Woojin Choi."], paragraphs: ['I make new AI easier to try and easier to turn into useful outcomes.', 'Through Choi.GPT, I translate complex features into practical content. For companies, I connect content, creators, and data to measurable growth.', 'I am less interested in explaining technology than in helping people actually use it.'] },
+    contact: { index: '05 / CONTACT', title: ['If you want people to', 'actually use new AI.'], cta: "LET'S WORK TOGETHER ↗", socials: ['LINKEDIN', 'INSTAGRAM'] },
+    footer: { copyright: '© 2026 CHOI DEPT.', location: 'SEOUL / KOREA', top: 'BACK TO TOP ↑' },
+  },
+};
+
 export const personas = [
-  {
-    id: 'creator', index: '01', title: 'AI Creator', label: 'AI CREATOR',
-    image: '/assets/characters/dark.webp',
-    alt: '검은 옷을 입고 태블릿을 든 최피티 픽셀 캐릭터',
-    accent: 'creator',
-    description: '복잡한 AI 워크플로를 누구나 바로 써볼 수 있는 한국어 콘텐츠로 바꿉니다.',
-    chips: ['28K+ FOLLOWERS', '15M+ ORGANIC VIEWS', '32 BRAND COLLABS'],
-  },
-  {
-    id: 'beauty', index: '02', title: 'Beauty & Growth', label: 'BEAUTY INFLUENCER',
-    image: '/assets/characters/field.webp',
-    alt: '뷰티 제품과 스마트폰을 든 최피티 픽셀 캐릭터',
-    accent: 'beauty',
-    description: '콘텐츠 제작과 크리에이터 협업, 성과 데이터를 다음 크리에이티브 결정으로 연결합니다.',
-    chips: ['160K MONTHLY VIEWS', '+500% TIKTOK VIEWS', '113K+ REACH'],
-  },
-  {
-    id: 'student', index: '03', title: 'Student & Researcher', label: 'UNIVERSITY STUDENT',
-    image: '/assets/characters/hood.webp',
-    alt: '후드와 청바지를 입은 최피티 픽셀 캐릭터',
-    accent: 'student',
-    description: '미디어커뮤니케이션과 데이터애널리틱스를 공부하며 실행 가능한 AI 평가 방법을 연구합니다.',
-    chips: ['MEDIA + DATA', 'GPA 4.0 / 4.5', '2024–2028'],
-  },
-  {
-    id: 'kkami', index: '04', title: "Kkami's Dad", label: "KKAMI'S DAD",
-    image: '/assets/characters/neutral.webp',
-    alt: '검은 강아지 까미와 함께 서 있는 최피티 픽셀 캐릭터',
-    accent: 'kkami',
-    description: '대시보드 밖의 생활에서도 관찰하고 기록하며, 새로운 도구를 평범한 하루에 직접 시험합니다.',
-    chips: ['DAILY OBSERVER', 'TRAVEL NOTES', 'WITH KKAMI'],
-  },
+  { id: 'creator', index: '01', title: 'AI Creator', label: 'AI CREATOR', image: '/assets/characters/dark.webp', alt: '검은 옷을 입고 태블릿을 든 최피티 픽셀 캐릭터', accent: 'creator', description: '복잡한 AI 워크플로를 누구나 바로 써볼 수 있는 한국어 콘텐츠로 바꿉니다.', chips: ['28K+ FOLLOWERS', '15M+ ORGANIC VIEWS', '32 BRAND COLLABS'], copy: { ko: { title: 'AI Creator', label: 'AI CREATOR', description: '복잡한 AI 워크플로를 누구나 바로 써볼 수 있는 한국어 콘텐츠로 바꿉니다.', alt: '검은 옷을 입고 태블릿을 든 최피티 픽셀 캐릭터', chips: ['28K+ FOLLOWERS', '15M+ ORGANIC VIEWS', '32 BRAND COLLABS'] }, en: { title: 'AI Creator', label: 'AI CREATOR', description: 'I turn complex AI workflows into practical Korean content people can try immediately.', alt: 'Pixel character of Woojin Choi in black clothes holding a tablet', chips: ['28K+ FOLLOWERS', '15M+ ORGANIC VIEWS', '32 BRAND COLLABS'] } } },
+  { id: 'beauty', index: '02', title: 'Beauty & Growth', label: 'BEAUTY INFLUENCER', image: '/assets/characters/field.webp', alt: '뷰티 제품과 스마트폰을 든 최피티 픽셀 캐릭터', accent: 'beauty', description: '콘텐츠 제작과 크리에이터 협업, 성과 데이터를 다음 크리에이티브 결정으로 연결합니다.', chips: ['160K MONTHLY VIEWS', '+500% TIKTOK VIEWS', '113K+ REACH'], copy: { ko: { title: 'Beauty & Growth', label: 'BEAUTY INFLUENCER', description: '콘텐츠 제작과 크리에이터 협업, 성과 데이터를 다음 크리에이티브 결정으로 연결합니다.', alt: '뷰티 제품과 스마트폰을 든 최피티 픽셀 캐릭터', chips: ['160K MONTHLY VIEWS', '+500% TIKTOK VIEWS', '113K+ REACH'] }, en: { title: 'Beauty & Growth', label: 'BEAUTY INFLUENCER', description: 'I connect beauty content, creator partnerships, and performance signals to the next creative decision.', alt: 'Pixel character of Woojin Choi holding a beauty product and a smartphone', chips: ['160K MONTHLY VIEWS', '+500% TIKTOK VIEWS', '113K+ REACH'] } } },
+  { id: 'student', index: '03', title: 'Student & Researcher', label: 'UNIVERSITY STUDENT', image: '/assets/characters/hood.webp', alt: '후드와 청바지를 입은 최피티 픽셀 캐릭터', accent: 'student', description: '미디어커뮤니케이션과 데이터애널리틱스를 공부하며 실행 가능한 AI 평가 방법을 연구합니다.', chips: ['MEDIA + DATA', 'GPA 4.0 / 4.5', '2024–2028'], copy: { ko: { title: 'Student & Researcher', label: 'UNIVERSITY STUDENT', description: '미디어커뮤니케이션과 데이터애널리틱스를 공부하며 실행 가능한 AI 평가 방법을 연구합니다.', alt: '후드와 청바지를 입은 최피티 픽셀 캐릭터', chips: ['MEDIA + DATA', 'GPA 4.0 / 4.5', '2024–2028'] }, en: { title: 'Student & Researcher', label: 'UNIVERSITY STUDENT', description: 'I study media communication and data analytics while researching practical ways to evaluate AI systems.', alt: 'Pixel character of Woojin Choi in a hoodie and jeans', chips: ['MEDIA + DATA', 'GPA 4.0 / 4.5', '2024–2028'] } } },
+  { id: 'kkami', index: '04', title: "Kkami's Dad", label: "KKAMI'S DAD", image: '/assets/characters/neutral.webp', alt: '검은 강아지 까미와 함께 서 있는 최피티 픽셀 캐릭터', accent: 'kkami', description: '대시보드 밖의 생활에서도 관찰하고 기록하며, 새로운 도구를 평범한 하루에 직접 시험합니다.', chips: ['DAILY OBSERVER', 'TRAVEL NOTES', 'WITH KKAMI'], copy: { ko: { title: "Kkami's Dad", label: "KKAMI'S DAD", description: '대시보드 밖의 생활에서도 관찰하고 기록하며, 새로운 도구를 평범한 하루에 직접 시험합니다.', alt: '검은 강아지 까미와 함께 서 있는 최피티 픽셀 캐릭터', chips: ['DAILY OBSERVER', 'TRAVEL NOTES', 'WITH KKAMI'] }, en: { title: "Kkami's Dad", label: "KKAMI'S DAD", description: 'Away from dashboards, I observe, document, and test new tools in the texture of everyday life.', alt: 'Pixel character of Woojin Choi standing with his black dog Kkami', chips: ['DAILY OBSERVER', 'TRAVEL NOTES', 'WITH KKAMI'] } } },
 ];
 
 export const headlineMetrics = [
@@ -40,46 +35,17 @@ export const headlineMetrics = [
 ];
 
 export const cases = [
-  {
-    id: 'choigpt', number: '01', title: 'Choi.GPT Content Lab', eyebrow: 'AI CREATOR / B2C',
-    context: '새로운 AI 제품을 한국 사용자가 이해하고 바로 시험할 수 있게 만드는 콘텐츠 랩.',
-    responsibility: '리서치, 기획, 스크립트, 디자인, 편집, 성과 분석.',
-    system: 'AUDIENCE PROBLEM → HOOK → PRACTICAL EXAMPLE → NEXT ACTION',
-    result: '28K+ followers · 15M+ organic views · 32 brand collaborations',
-    links: [
-      { label: 'INSTAGRAM', href: 'https://www.instagram.com/choi.gpt.ai/' },
-      { label: 'NEWTAKE PR', href: 'https://www.instagram.com/choi.gpt.ai/reel/Db2pyX9yrNp/' },
-      { label: 'MORPHIC AD', href: 'https://www.instagram.com/choi.gpt.ai/reel/Da5XpUcyMxL/' },
-    ],
-  },
-  {
-    id: 'beauty-growth', number: '02', title: 'North America Beauty Growth', eyebrow: 'BEAUTY / B2B',
-    context: 'LG생활건강의 북미향 뷰티 브랜드 콘텐츠와 성장 업무.',
-    responsibility: '숏폼 콘텐츠, 크리에이터 협업, 이커머스 지원, 성과 분석.',
-    system: 'CREATE → PUBLISH → READ SIGNALS → IMPROVE',
-    result: '160K monthly views · +500% TikTok views · 113K+ reach · 9K+ interactions',
-    links: [],
-  },
-  {
-    id: 'creator-ops', number: '03', title: 'Korea/Japan Creator Operations', eyebrow: 'CREATOR OPS / B2B',
-    context: 'Manus Creator Program의 한국·일본 크리에이터 운영.',
-    responsibility: '소싱, 핏 검토, 아웃리치, 온보딩, 현지화, 콘텐츠 리뷰, 운영 조율.',
-    system: 'SOURCE → QUALIFY → ONBOARD → REVIEW → MEASURE',
-    result: '50-candidate verified workbook · 138-profile expansion review',
-    links: [{ label: 'MANUS PARTNER CONTENT', href: 'https://www.instagram.com/choi.gpt.ai/p/Db-LfeXkuDH/' }],
-  },
+  { id: 'choigpt', number: '01', title: 'Choi.GPT Content Lab', eyebrow: 'AI CREATOR / B2C', context: '새로운 AI 제품을 한국 사용자가 이해하고 바로 시험할 수 있게 만드는 콘텐츠 랩.', responsibility: '리서치, 기획, 스크립트, 디자인, 편집, 성과 분석.', system: 'AUDIENCE PROBLEM → HOOK → PRACTICAL EXAMPLE → NEXT ACTION', result: '28K+ followers · 15M+ organic views · 32 brand collaborations', links: [{ label: 'INSTAGRAM', href: 'https://www.instagram.com/choi.gpt.ai/' }, { label: 'NEWTAKE PR', href: 'https://www.instagram.com/choi.gpt.ai/reel/Db2pyX9yrNp/' }, { label: 'MORPHIC AD', href: 'https://www.instagram.com/choi.gpt.ai/reel/Da5XpUcyMxL/' }], copy: { ko: { title: 'Choi.GPT Content Lab', eyebrow: 'AI CREATOR / B2C', context: '새로운 AI 제품을 한국 사용자가 이해하고 바로 시험할 수 있게 만드는 콘텐츠 랩.', responsibility: '리서치, 기획, 스크립트, 디자인, 편집, 성과 분석.', system: 'AUDIENCE PROBLEM → HOOK → PRACTICAL EXAMPLE → NEXT ACTION', result: '28K+ followers · 15M+ organic views · 32 brand collaborations' }, en: { title: 'Choi.GPT Content Lab', eyebrow: 'AI CREATOR / B2C', context: 'A content lab that helps Korean audiences understand and try new AI products immediately.', responsibility: 'Research, strategy, scripting, design, editing, and performance analysis.', system: 'AUDIENCE PROBLEM → HOOK → PRACTICAL EXAMPLE → NEXT ACTION', result: '28K+ followers · 15M+ organic views · 32 brand collaborations' } } },
+  { id: 'beauty-growth', number: '02', title: 'North America Beauty Growth', eyebrow: 'BEAUTY / B2B', context: 'LG생활건강의 북미향 뷰티 브랜드 콘텐츠와 성장 업무.', responsibility: '숏폼 콘텐츠, 크리에이터 협업, 이커머스 지원, 성과 분석.', system: 'CREATE → PUBLISH → READ SIGNALS → IMPROVE', result: '160K monthly views · +500% TikTok views · 113K+ reach · 9K+ interactions', links: [], copy: { ko: { title: 'North America Beauty Growth', eyebrow: 'BEAUTY / B2B', context: 'LG생활건강의 북미향 뷰티 브랜드 콘텐츠와 성장 업무.', responsibility: '숏폼 콘텐츠, 크리에이터 협업, 이커머스 지원, 성과 분석.', system: 'CREATE → PUBLISH → READ SIGNALS → IMPROVE', result: '160K monthly views · +500% TikTok views · 113K+ reach · 9K+ interactions' }, en: { title: 'North America Beauty Growth', eyebrow: 'BEAUTY / B2B', context: 'North American beauty brand content and growth work for LG Household & Health Care.', responsibility: 'Short-form content, creator partnerships, e-commerce support, and performance analysis.', system: 'CREATE → PUBLISH → READ SIGNALS → IMPROVE', result: '160K monthly views · +500% TikTok views · 113K+ reach · 9K+ interactions' } } },
+  { id: 'creator-ops', number: '03', title: 'Korea/Japan Creator Operations', eyebrow: 'CREATOR OPS / B2B', context: 'Manus Creator Program의 한국·일본 크리에이터 운영.', responsibility: '소싱, 핏 검토, 아웃리치, 온보딩, 현지화, 콘텐츠 리뷰, 운영 조율.', system: 'SOURCE → QUALIFY → ONBOARD → REVIEW → MEASURE', result: '50-candidate verified workbook · 138-profile expansion review', links: [{ label: 'MANUS PARTNER CONTENT', href: 'https://www.instagram.com/choi.gpt.ai/p/Db-LfeXkuDH/' }], copy: { ko: { title: 'Korea/Japan Creator Operations', eyebrow: 'CREATOR OPS / B2B', context: 'Manus Creator Program의 한국·일본 크리에이터 운영.', responsibility: '소싱, 핏 검토, 아웃리치, 온보딩, 현지화, 콘텐츠 리뷰, 운영 조율.', system: 'SOURCE → QUALIFY → ONBOARD → REVIEW → MEASURE', result: '50-candidate verified workbook · 138-profile expansion review' }, en: { title: 'Korea/Japan Creator Operations', eyebrow: 'CREATOR OPS / B2B', context: 'Creator operations for the Manus Creator Program across Korea and Japan.', responsibility: 'Sourcing, fit review, outreach, onboarding, localization, content review, and coordination.', system: 'SOURCE → QUALIFY → ONBOARD → REVIEW → MEASURE', result: '50-candidate verified workbook · 138-profile expansion review' } } },
 ];
 
 export const experience = [
-  { period: '2026–PRESENT', role: 'Creator & Builder', organization: 'Choi.GPT', type: 'creator', status: 'active' },
-  { period: '2026', role: 'Manus AI Viral Coach', organization: 'MuseOn.AI', type: 'freelance', status: 'completed' },
-  { period: '2025–2026', role: 'Global Marketing — North America', organization: 'LG Household & Health Care', type: 'work', status: 'completed' },
-  { period: '2024–2028', role: 'Media Communication & Data Analytics', organization: 'Incheon National University', type: 'education', status: 'active' },
-  { period: 'RESEARCH', role: 'Harness Benchmark & Implementation Lead', organization: 'Team Computer', type: 'research', status: 'prototype / pilot calibration' },
+  { period: '2026–PRESENT', role: 'Creator & Builder', organization: 'Choi.GPT', type: 'creator', status: 'active', copy: { ko: { role: 'Creator & Builder', organization: 'Choi.GPT', status: 'active' }, en: { role: 'Creator & Builder', organization: 'Choi.GPT', status: 'active' } } },
+  { period: '2026', role: 'Manus AI Viral Coach', organization: 'MuseOn.AI', type: 'freelance', status: 'completed', copy: { ko: { role: 'Manus AI Viral Coach', organization: 'MuseOn.AI', status: 'completed' }, en: { role: 'Manus AI Viral Coach', organization: 'MuseOn.AI', status: 'completed' } } },
+  { period: '2025–2026', role: 'Global Marketing — North America', organization: 'LG Household & Health Care', type: 'work', status: 'completed', copy: { ko: { role: 'Global Marketing — North America', organization: 'LG Household & Health Care', status: 'completed' }, en: { role: 'Global Marketing — North America', organization: 'LG Household & Health Care', status: 'completed' } } },
+  { period: '2024–2028', role: 'Media Communication & Data Analytics', organization: 'Incheon National University', type: 'education', status: 'active', copy: { ko: { role: 'Media Communication & Data Analytics', organization: 'Incheon National University', status: 'active' }, en: { role: 'Media Communication & Data Analytics', organization: 'Incheon National University', status: 'active' } } },
+  { period: 'RESEARCH', role: 'Harness Benchmark & Implementation Lead', organization: 'Team Computer', type: 'research', status: 'prototype / pilot calibration', copy: { ko: { role: 'Harness Benchmark & Implementation Lead', organization: 'Team Computer', status: 'prototype / pilot calibration' }, en: { role: 'Harness Benchmark & Implementation Lead', organization: 'Team Computer', status: 'prototype / pilot calibration' } } },
 ];
 
-export const links = {
-  email: 'mailto:hello@choidept.com',
-  linkedin: 'https://www.linkedin.com/in/woojin-choi-a0989b24a/',
-  instagram: 'https://www.instagram.com/choi.gpt.ai/',
-};
+export const links = { email: 'mailto:hello@choidept.com', linkedin: 'https://www.linkedin.com/in/woojin-choi-a0989b24/', instagram: 'https://www.instagram.com/choi.gpt.ai/' };

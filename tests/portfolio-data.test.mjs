@@ -6,6 +6,7 @@ import {
   cases,
   experience,
   links,
+  pageCopy,
 } from '../portfolio-data.js';
 
 test('defines four unique public personas', () => {
@@ -36,4 +37,22 @@ test('does not publish private Manus or personal data', () => {
   assert.doesNotMatch(serialized, /private payout|revenue share|phone number|home address|tax id/i);
   assert.doesNotMatch(serialized, /010-[0-9]/);
   assert.equal(serialized.includes('official OpenAI partner'), false);
+});
+
+test('provides complete Korean and English page copy', () => {
+  for (const language of ['ko', 'en']) {
+    for (const key of ['nav', 'hero', 'proof', 'work', 'experience', 'profile', 'contact', 'footer']) {
+      assert.ok(pageCopy[language][key]);
+    }
+  }
+  assert.equal(pageCopy.ko.hero.title, '모두가 AI를 쉽게, 최피티.');
+  assert.equal(pageCopy.en.hero.title, 'Making AI easy for everyone.');
+});
+
+test('localizes all personas, cases, and experience records', () => {
+  for (const item of [...personas, ...cases, ...experience]) {
+    for (const language of ['ko', 'en']) {
+      assert.ok(item.copy?.[language] ?? item.role?.[language]);
+    }
+  }
 });

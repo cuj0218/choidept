@@ -3,6 +3,7 @@ import { cp, mkdir, rm } from 'node:fs/promises';
 await rm('dist', { recursive: true, force: true });
 await mkdir('dist', { recursive: true });
 await cp('index.html', 'dist/index.html');
+await cp('design-tokens.css', 'dist/design-tokens.css');
 await cp('styles.css', 'dist/styles.css');
 await cp('script.js', 'dist/script.js');
 await cp('portfolio-data.js', 'dist/portfolio-data.js');

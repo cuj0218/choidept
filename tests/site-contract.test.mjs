@@ -4,6 +4,8 @@ import { readFile } from 'node:fs/promises';
 
 const html = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 const css = await readFile(new URL('../styles.css', import.meta.url), 'utf8');
+const tokens = await readFile(new URL('../design-tokens.css', import.meta.url), 'utf8');
+const buildScript = await readFile(new URL('../build.mjs', import.meta.url), 'utf8');
 const og = await readFile(new URL('../public/og.svg', import.meta.url), 'utf8');
 const favicon = await readFile(new URL('../public/favicon.svg', import.meta.url), 'utf8');
 const robots = await readFile(new URL('../robots.txt', import.meta.url), 'utf8');
@@ -79,4 +81,19 @@ test('keeps the short desktop hero and mobile headline inside the viewport', () 
   assert.match(css, /@media \(max-width: 768px\)[\s\S]*\.hero\s*\{\s*grid-template-columns:\s*1fr/);
   assert.match(css, /\.hero__mobile-break\s*\{\s*display:\s*none/);
   assert.match(css, /@media \(max-width: 768px\)[\s\S]*\.hero__mobile-break\s*\{\s*display:\s*block/);
+});
+
+test('ships the editable type system and bilingual header control', () => {
+  assert.match(html, /id="language-toggle"/);
+  assert.match(html, /aria-pressed="false"/);
+  for (const token of ['--hero-title-tracking', '--hero-title-leading', '--body-leading', '--page-gutter']) {
+    assert.match(tokens, new RegExp(`${token}:`));
+  }
+  assert.match(css, /@import url\('\.\/design-tokens\.css'\)/);
+  assert.match(css, /font-family:.*Apple SD Gothic Neo.*Noto Sans KR/);
+  assert.match(css, /@media \(max-width: 768px\)[\s\S]*grid-template-columns:\s*1fr/);
+});
+
+test('includes the editable token layer in the production build', () => {
+  assert.match(buildScript, /cp\('design-tokens\.css', 'dist\/design-tokens\.css'\)/);
 });

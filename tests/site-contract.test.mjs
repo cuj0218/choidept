@@ -8,15 +8,16 @@ const tokens = await readFile(new URL('../design-tokens.css', import.meta.url), 
 const buildScript = await readFile(new URL('../build.mjs', import.meta.url), 'utf8');
 const og = await readFile(new URL('../public/og.svg', import.meta.url), 'utf8');
 const favicon = await readFile(new URL('../public/favicon.svg', import.meta.url), 'utf8');
+const logo = await readFile(new URL('../assets/brand/choi-dept-logo.webp', import.meta.url));
 const robots = await readFile(new URL('../robots.txt', import.meta.url), 'utf8');
 const sitemap = await readFile(new URL('../sitemap.xml', import.meta.url), 'utf8');
 
 test('ships the stable positioning and canonical metadata', () => {
   assert.match(html, /모두가 AI를/);
   assert.match(html, /쉽게,/);
-  assert.match(html, /28K\+/);
-  assert.match(html, /15M\+/);
-  assert.match(html, /32/);
+  assert.match(html, /14K\+/);
+  assert.match(html, /5M\+/);
+  assert.match(html, /32%\+/);
   assert.match(html, /<link rel="canonical" href="https:\/\/choidept\.com\/"/);
   assert.match(html, /<title>CHOI DEPT\. — 모두가 AI를 쉽게, 최피티<\/title>/);
 });
@@ -32,6 +33,13 @@ test('contains semantic persona and portfolio landmarks', () => {
 
 test('loads the browser controller as a module', () => {
   assert.match(html, /<script type="module" src="\/script\.js"><\/script>/);
+});
+
+test('uses the supplied brand mark in the header and share artwork', () => {
+  assert.match(html, /src="\/assets\/brand\/choi-dept-logo\.webp"/);
+  assert.match(css, /\.wordmark img/);
+  assert.match(og, /\.\.\/assets\/brand\/choi-dept-logo\.webp/);
+  assert.ok(logo.byteLength > 0);
 });
 
 test('defines brand tokens, persona accents, responsive layouts, and reduced motion', () => {

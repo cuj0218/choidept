@@ -21,12 +21,12 @@ test('defines four unique public personas', () => {
 });
 
 test('keeps the hero proof set concise and sourced', () => {
-  assert.deepEqual(headlineMetrics.map(({ value }) => value), ['28K+', '15M+', '32']);
+  assert.deepEqual(headlineMetrics.map(({ value }) => value), ['14K+', '5M+', '32%+']);
   assert.ok(headlineMetrics.every(({ publication }) => publication === 'public'));
 });
 
-test('contains three evidence-led cases and a bounded research status', () => {
-  assert.deepEqual(cases.map(({ id }) => id), ['choigpt', 'beauty-growth', 'creator-ops']);
+test('contains evidence-led cases and a bounded research status', () => {
+  assert.deepEqual(cases.map(({ id }) => id), ['choigpt', 'beauty-growth', 'oliveyoung', 'australian-cruise', 'creator-ops']);
   assert.ok(cases.every(({ context, responsibility, system, result }) =>
     [context, responsibility, system, result].every(Boolean)));
   assert.ok(experience.some(({ status }) => status === 'prototype / pilot calibration'));

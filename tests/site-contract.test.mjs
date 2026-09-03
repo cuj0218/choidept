@@ -74,6 +74,9 @@ test('keeps the short desktop hero and mobile headline inside the viewport', () 
   assert.match(css, /min-height:\s*min\(650px,\s*calc\(100svh - 230px\)\)/);
   assert.match(css, /grid-template-rows:\s*auto minmax\(0,\s*1fr\) auto/);
   assert.match(css, /height:\s*min\(44svh,\s*430px\)/);
+  assert.match(css, /@media \(max-width: 1199px\)[\s\S]*grid-template-columns:\s*minmax\(0,\s*1\.05fr\) minmax\(300px,\s*\.95fr\)/);
+  assert.doesNotMatch(css, /@media \(max-width: 900px\)\s*\{\s*\.hero\s*\{\s*grid-template-columns:\s*1fr/);
+  assert.match(css, /@media \(max-width: 768px\)[\s\S]*\.hero\s*\{\s*grid-template-columns:\s*1fr/);
   assert.match(css, /\.hero__mobile-break\s*\{\s*display:\s*none/);
   assert.match(css, /@media \(max-width: 768px\)[\s\S]*\.hero__mobile-break\s*\{\s*display:\s*block/);
 });

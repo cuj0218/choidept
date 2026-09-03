@@ -98,12 +98,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 @media (max-width: 1199px) {
   :root { --page: min(100% - 36px, 1100px); }
-  .hero { grid-template-columns: 1fr 440px; }
+  .hero { grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr); gap: clamp(20px, 3vw, 48px); }
   .persona-scene { min-height: 580px; }
 }
 
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; }
   .identity-os { max-width: 680px; width: 100%; margin: 0 auto; }
   .profile { grid-template-columns: 1fr; }
   .profile-portraits { min-height: 560px; }
@@ -113,7 +112,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   :root { --page: calc(100% - 24px); --radius-lg: 24px; }
   .desktop-nav { display: none; }
   .menu-toggle { display: block; }
-  .hero { min-height: auto; padding-top: 72px; }
+  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 72px; }
   .hero h1 { font-size: clamp(48px, 14vw, 60px); line-height: .94; }
   .hero__mobile-break { display: block; }
   .hero__desktop-space { display: none; }

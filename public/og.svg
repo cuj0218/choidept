@@ -4,7 +4,7 @@
   <rect width="1200" height="630" fill="#F7F4EC"/>
   <circle cx="970" cy="160" r="270" fill="#3157FF" opacity=".16"/>
   <rect x="54" y="48" width="1092" height="534" rx="34" fill="none" stroke="#111111" stroke-opacity=".18"/>
-  <image href="../assets/characters/dark.webp" x="760" y="95" width="380" height="480" preserveAspectRatio="xMidYMid meet"/>
+  <image href="../assets/characters/dark-transparent.webp" x="760" y="95" width="380" height="480" preserveAspectRatio="xMidYMid meet"/>
   <image href="../assets/brand/choi-dept-logo.webp" x="90" y="72" width="290" height="53" preserveAspectRatio="xMinYMid meet"/>
   <text x="90" y="288" fill="#111111" font-family="Arial, sans-serif" font-size="78" font-weight="800">모두가 AI를 쉽게,</text>
   <text x="90" y="386" fill="#3157FF" font-family="Arial, sans-serif" font-size="102" font-weight="900">최피티.</text>

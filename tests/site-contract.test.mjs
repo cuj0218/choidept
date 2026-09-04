@@ -63,10 +63,10 @@ test('uses absolute share metadata and the apex domain', () => {
 test('keeps share artwork self-resolving and crawl metadata canonical', () => {
   const characterHref = og.match(/<image href="([^"]+)"/)?.[1];
 
-  assert.equal(characterHref, '../assets/characters/dark.webp');
+  assert.equal(characterHref, '../assets/characters/dark-transparent.webp');
   assert.equal(
     new URL(characterHref, 'https://choidept.com/public/og.svg').href,
-    'https://choidept.com/assets/characters/dark.webp',
+    'https://choidept.com/assets/characters/dark-transparent.webp',
   );
   assert.match(favicon, /aria-label="CHOI DEPT favicon"/);
   assert.doesNotMatch(favicon, /<(?:image|use)\b|(?:href|url)\s*=/);

@@ -15,7 +15,7 @@ const sitemap = await readFile(new URL('../sitemap.xml', import.meta.url), 'utf8
 test('ships the stable positioning and canonical metadata', () => {
   assert.match(html, /모두가 AI를/);
   assert.match(html, /쉽게,/);
-  assert.match(html, /14K\+/);
+  assert.match(html, /28K\+/);
   assert.match(html, /5M\+/);
   assert.match(html, /32%\+/);
   assert.match(html, /<link rel="canonical" href="https:\/\/choidept\.com\/"/);

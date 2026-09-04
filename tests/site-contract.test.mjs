@@ -16,8 +16,8 @@ test('ships the stable positioning and canonical metadata', () => {
   assert.match(html, /모두가 AI를/);
   assert.match(html, /쉽게,/);
   assert.match(html, /28K\+/);
-  assert.match(html, /5M\+/);
-  assert.match(html, /32%\+/);
+  assert.match(html, /15M\+/);
+  assert.match(html, /6\.7%\+/);
   assert.match(html, /<link rel="canonical" href="https:\/\/choidept\.com\/"/);
   assert.match(html, /<title>CHOI DEPT\. — 모두가 AI를 쉽게, 최피티<\/title>/);
 });

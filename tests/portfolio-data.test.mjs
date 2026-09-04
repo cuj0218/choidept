@@ -21,7 +21,7 @@ test('defines four unique public personas', () => {
 });
 
 test('keeps the hero proof set concise and sourced', () => {
-  assert.deepEqual(headlineMetrics.map(({ value }) => value), ['28K+', '5M+', '32%+']);
+  assert.deepEqual(headlineMetrics.map(({ value }) => value), ['28K+', '15M+', '6.7%+']);
   assert.ok(headlineMetrics.every(({ publication }) => publication === 'public'));
 });
 
